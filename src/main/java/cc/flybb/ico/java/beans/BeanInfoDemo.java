@@ -28,7 +28,7 @@ public class BeanInfoDemo {
     }
 
     @Test
-    public static void tset3() throws IntrospectionException {
+    public void tset3() throws IntrospectionException {
         BeanInfo beanInfo = Introspector.getBeanInfo(Persion.class,Object.class);
         Stream.of(beanInfo.getPropertyDescriptors()).forEach(propertyDescriptor ->{
             // PropertyDescriptor 允许添加属性编辑器 PropertyEditor
